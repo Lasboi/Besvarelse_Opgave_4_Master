@@ -12,6 +12,11 @@ public class CrazyMath {
 
     static void Setup() {
         Scanner scanner = new Scanner(System.in);
+
+        while (count > numberOfQuestions) {
+            int number1 = (int)(Math.random() * 12 + 1);
+            int number2 = (int)(Math.random() * 12 + 1);
+        }
     }
 
 }
