@@ -14,8 +14,31 @@ public class CrazyMath {
         Scanner scanner = new Scanner(System.in);
 
         while (count > numberOfQuestions) {
+            //Vi genere 2 random tal
             int number1 = (int)(Math.random() * 12 + 1);
             int number2 = (int)(Math.random() * 12 + 1);
+
+            //Hvis det andet tal er højere end det første bytter vi dem om for at det er nemmere
+            if (number1 < number2) {
+                int temp = number1;
+                number1 = number2;
+                number2 = temp;
+            }
+
+            System.out.println("Hvad er " + number1 + " * " + number2 + "? ");
+            int answer = scanner.nextInt();
+
+            if (number1 * number2 == answer) {
+                System.out.println("Du har ret!");
+                correctCount++;
+            }
+            else {
+                System.out.println("Dit svar er desværre forkert.");
+                System.out.println("Det rigtige svar er: " + number1*number2);
+            }
+
+            count++;
+
         }
     }
 
