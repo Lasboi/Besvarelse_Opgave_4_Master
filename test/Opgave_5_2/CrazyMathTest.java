@@ -34,4 +34,17 @@ public class CrazyMathTest extends TestCase {
         assertEquals(5, totalNumbers);
     }
 
+    //Test case - Rigtigt svar
+    //Input: sum1 = 5, sum2 = 10
+    //Forventet output: answer = 50
+
+    public void testMathLogic() {
+        int sum1 = 5;
+        int sum2 = 10;
+        int answer = 50;
+
+        answer = sum1 * sum2;
+        assertEquals(50, answer);
+    }
+
 }
