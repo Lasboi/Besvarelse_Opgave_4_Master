@@ -22,7 +22,11 @@ public class ConverterTest extends TestCase {
     //Forventet output: centimeter = 2.54
 
     public void testInchToCentimeter(){
+        double inch = 1;
+        double centimeter = 0;
 
+        centimeter = inch * 2.54;
+        assertEquals(2.54, centimeter);
     }
 
 }
