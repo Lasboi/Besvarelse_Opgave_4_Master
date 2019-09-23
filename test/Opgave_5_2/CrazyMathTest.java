@@ -47,4 +47,19 @@ public class CrazyMathTest extends TestCase {
         assertEquals(50, answer);
     }
 
+    //Test case - Tid fra start
+    //Input: endTime = System.currentTimeMillis()
+    //Forventet output: 0
+
+    public void testTimeGenerator() {
+        long startTime = System.currentTimeMillis();
+        long endTime = 0;
+        long testTime = 0;
+
+        endTime = System.currentTimeMillis();
+        testTime = endTime - startTime;
+        testTime = testTime / 1000;
+
+        assertEquals(0, testTime);
+    }
 }

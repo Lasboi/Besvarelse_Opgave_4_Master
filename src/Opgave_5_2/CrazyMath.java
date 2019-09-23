@@ -13,7 +13,7 @@ public class CrazyMath {
     static void Setup() {
         Scanner scanner = new Scanner(System.in);
 
-        while (count > numberOfQuestions) {
+        while (count < numberOfQuestions) {
             //Vi genere 2 random tal
             int number1 = (int)(Math.random() * 12 + 1);
             int number2 = (int)(Math.random() * 12 + 1);
@@ -25,7 +25,7 @@ public class CrazyMath {
                 number2 = temp;
             }
 
-            System.out.println("Hvad er " + number1 + " * " + number2 + "? ");
+            System.out.print("Hvad er " + number1 + " * " + number2 + "? ");
             int answer = scanner.nextInt();
 
             if (number1 * number2 == answer) {
@@ -40,6 +40,12 @@ public class CrazyMath {
             count++;
 
         }
+    }
+
+    static void TimeGenerator() {
+
+        long endTime = System.currentTimeMillis();
+
     }
 
 }
