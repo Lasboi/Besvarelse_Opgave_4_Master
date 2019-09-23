@@ -59,4 +59,12 @@ public class CrazyMath {
 
     }
 
+    //Made by metoden fordi det er cool
+    static void madeBy() {
+        System.out.println("");
+        System.out.println("******************************");
+        System.out.println("******* Kodet af Lasse *******");
+        System.out.println("******************************");
+    }
+
 }
