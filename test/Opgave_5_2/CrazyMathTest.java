@@ -41,7 +41,7 @@ public class CrazyMathTest extends TestCase {
     public void testMathLogic() {
         int sum1 = 5;
         int sum2 = 10;
-        int answer = 50;
+        int answer;
 
         answer = sum1 * sum2;
         assertEquals(50, answer);
