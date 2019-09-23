@@ -17,4 +17,17 @@ public class ConverterTest extends TestCase {
         assertEquals(50, i);
     }
 
+    //Test case - F til C
+    //Input: c = 0
+    //Forventet output: F = 32.0
+
+    public void testConvention() {
+        double c = 0;
+        double f = 0;
+
+        f = (c * 9 / 5) + 32;
+
+        assertEquals(32.0, f);
+    }
+
 }
