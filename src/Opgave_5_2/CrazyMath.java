@@ -39,12 +39,20 @@ public class CrazyMath {
 
             count++;
 
+            output += "\n" + number1 + " * " + number2 + " = " + answer +
+                    ((number1 * number2 == answer) ? " Korrekt": " Forkert");
+
         }
     }
+
 
     static void TimeGenerator() {
 
         long endTime = System.currentTimeMillis();
+        long testTime = endTime - startTime;
+
+        System.out.println("Du har svaret rigtigt på " + correctCount + ". \nTesten tog dig "
+        + testTime / 1000 + " sekunder at fuldføre." + output);
 
     }
 
